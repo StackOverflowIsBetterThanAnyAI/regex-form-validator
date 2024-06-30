@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regex Form Validator</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Regex Form Validator" />
+        <meta name="author" content="Michael Münzenhofer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <link href="./src/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Regex Form Validator</h1>
+        <div class="create-account-form" id="create-account-form">
+            <h2>Create Account</h2>
+            <form class="input-label-container">
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    type="text"
+                    placeholder="Enter Email."
+                    autocomplete="email"
+                    oninput="emailInput()"
+                    autofocus
+                />
+                <label for="password">Password</label>
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter Password."
+                    autocomplete="new-password"
+                    oninput="passwordInput()"
+                />
+                <label for="password-repeat">Password</label>
+                <input
+                    id="password-repeat"
+                    type="password"
+                    placeholder="Repeat Password."
+                    autocomplete="new-password"
+                    oninput="passwordRepeatInput()"
+                    disabled
+                    aria-disabled="true"
+                />
+            </form>
+            <button
+                id="submit"
+                type="submit"
+                onclick="submitData()"
+                disabled
+                aria-disabled="true"
+            >
+                Sign up
+            </button>
+        </div>
+        <div class="error" id="error-container" style="display: none">
+            <div id="error-email" style="display: none">
+                <span>!</span>Please enter a valid Email address!
+            </div>
+            <div id="error-password" style="display: none">
+                <div id="info">
+                    <span>!</span>The password must contain the following
+                    characters:
+                </div>
+                <div id="lowercase"><span>X</span>One lowercase letter.</div>
+                <div id="uppercase"><span>X</span>One uppercase letter.</div>
+                <div id="number"><span>X</span>One number.</div>
+                <div id="special"><span>X</span>One special character.</div>
+                <div id="length">
+                    <span>X</span>At least eight characters in total.
+                </div>
+            </div>
+            <div id="error-password-repeat" style="display: none">
+                <span>!</span>The passwords do not match!
+            </div>
+        </div>
+        <h2 class="welcome" id="welcome" style="display: none"></h2>
+        <script src="./src/script.js"></script>
+    </body>
+</html>
