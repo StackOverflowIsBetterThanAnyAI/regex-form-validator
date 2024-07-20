@@ -5,8 +5,238 @@
     color: #18181b;
 }
 
+@media only screen and (min-width: 1024px) {
+    button {
+        font-size: 18px;
+    }
+
+    h1 {
+        padding-top: 32px;
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    span {
+        padding-right: 16px;
+    }
+
+    .create-account-form {
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .create-account-form button {
+        margin: 16px auto 0 auto;
+        width: 256px;
+        padding: 8px 16px;
+    }
+
+    .error {
+        font-size: 18px;
+        margin-top: 32px;
+        padding: 16px;
+    }
+
+    .input-label-container {
+        gap: 8px;
+    }
+
+    .welcome {
+        padding: 32px;
+        margin: 32px auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    button {
+        font-size: 18px;
+    }
+
+    h1 {
+        padding-top: min(2vw, 32px);
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 18px;
+        margin-top: min(1vw, 16px);
+    }
+
+    span {
+        padding-right: min(1vw, 16px);
+    }
+
+    .create-account-form {
+        margin-top: max(1vw, 16px);
+        padding: max(1vw, 16px);
+    }
+
+    .create-account-form button {
+        margin: min(2vw, 32px) auto 0 auto;
+        width: 60%;
+        padding: min(1vw, 16px) min(0.5vw, 8px);
+    }
+
+    .error {
+        font-size: min(4vw, 18px);
+        margin-top: min(4vw, 32px);
+        padding: min(2vw, 16px);
+    }
+
+    .input-label-container {
+        gap: min(1vw, 8px);
+    }
+
+    .welcome {
+        padding: min(4vw, 32px);
+        margin: min(4vw, 32px) auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 max(2vw, 16px);
+    }
+
+    button {
+        font-size: min(4vw, 18px);
+    }
+
+    h1 {
+        padding-top: min(3.75vw, 16px);
+        font-size: min(6.25vw, 28px);
+    }
+
+    h2 {
+        font-size: min(4.75vw, 20px);
+    }
+
+    input {
+        font-size: min(3.75vw, 16px);
+        padding: min(1vw, 8px);
+    }
+
+    label {
+        font-size: min(4vw, 18px);
+        margin-top: max(1vw, 8px);
+    }
+
+    span {
+        padding-right: min(1vw, 8px);
+    }
+
+    .create-account-form {
+        margin-top: min(4vw, 24px);
+        padding: min(4vw, 24px);
+    }
+
+    .create-account-form button {
+        margin: min(3.75vw, 16px) auto 0 auto;
+        width: min(60%, 256px);
+        padding: min(1vw, 8px);
+    }
+
+    .error {
+        font-size: min(4vw, 18px);
+        margin-top: min(4vw, 32px);
+        padding: min(2vw, 16px);
+    }
+
+    .input-label-container {
+        gap: min(1vw, 8px);
+    }
+
+    .welcome {
+        padding: min(4vw, 32px);
+        margin: min(4vw, 32px) auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    body {
+        margin: 0 max(4vw, 8px);
+    }
+
+    button {
+        font-size: min(8vw, 16px);
+    }
+
+    h1 {
+        padding-top: min(8vw, 16px);
+        font-size: min(12vw, 24px);
+    }
+
+    h2 {
+        font-size: min(9vw, 18px);
+    }
+
+    input {
+        font-size: min(7vw, 14px);
+        padding: min(2vw, 4px);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    label {
+        font-size: min(8vw, 16px);
+        margin-top: max(4vw, 8px);
+    }
+
+    span {
+        padding-right: max(2vw, 4px);
+    }
+
+    .create-account-form {
+        margin-top: min(8vw, 16px);
+        padding: min(8vw, 16px);
+    }
+
+    .create-account-form button {
+        margin: min(8vw, 16px) auto 0 auto;
+        width: min(100%, 128px);
+        padding: min(2vw, 4px);
+    }
+
+    .error {
+        font-size: min(8vw, 16px);
+        margin-top: min(8vw, 16px);
+        padding: min(4vw, 8px);
+    }
+
+    .input-label-container {
+        gap: max(2vw, 4px);
+    }
+
+    .welcome {
+        padding: min(8vw, 16px) min(4vw, 8px);
+        margin: min(8vw, 16px) auto 0 auto;
+    }
+}
+
 html {
-    min-width: 384px;
     max-width: 512px;
     height: 100vh;
     background: linear-gradient(180deg, #93c5fd, #bfdbfe);
@@ -16,17 +246,19 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
 }
 
 h1 {
-    padding-top: 16px;
     margin: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 input {
     border-radius: 8px;
-    padding: 4px;
     border: none;
     outline: #19191c solid 1px;
     cursor: text;
@@ -49,27 +281,20 @@ input:focus-visible {
 
 input:disabled {
     cursor: not-allowed;
-    outline: #c5c5cc solid 0px;
-}
-
-label {
-    margin-top: 8px;
+    outline: none;
 }
 
 span {
     color: #f80101;
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-right: 4px;
 }
 
 .create-account-form {
     display: flex;
     flex-direction: column;
-    border-radius: 32px;
+    border-radius: 16px;
     background-color: #e3e3e6;
-    margin-top: 16px;
-    padding: 16px;
 }
 
 .create-account-form h2 {
@@ -77,10 +302,7 @@ span {
 }
 
 .create-account-form button {
-    margin: 16px auto 0 auto;
-    width: clamp(128px, 20%, 256px);
     border-radius: 32px;
-    padding: 4px;
     border: none;
     outline: #19191c solid 1px;
 }
@@ -105,8 +327,7 @@ span {
 }
 
 .error {
-    margin-top: 16px;
-    padding: 8px;
+    background-color: rgba(254, 254, 254, 0.75);
     font-size: smaller;
     outline: #f80101 solid 2px;
 }
@@ -114,14 +335,10 @@ span {
 .input-label-container {
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 .welcome {
-    padding: 8px;
-    margin: 16px auto 0 auto;
     background-color: #e3e3e6;
-    border-radius: 32px;
-    min-width: 256px;
+    border-radius: 16px;
     text-align: center;
 }
