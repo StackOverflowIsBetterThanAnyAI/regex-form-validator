@@ -2,6 +2,27 @@ let correctEmail
 let correctPassword
 let correctPasswordRepeat
 
+document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return
+
+    const focusElements = Array.from(
+        document.querySelectorAll('button, input')
+    ).filter((item) => !item.disabled)
+
+    const firstElement = focusElements[0]
+    const lastElement = focusElements[focusElements.length - 1]
+
+    if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+            e.preventDefault()
+            lastElement.focus()
+        }
+    } else if (document.activeElement === lastElement) {
+        e.preventDefault()
+        firstElement.focus()
+    }
+})
+
 function emailInput() {
     const email = document.getElementById('email')
     email.style.outlineColor = '#19191c'
