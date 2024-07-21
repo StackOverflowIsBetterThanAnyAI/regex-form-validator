@@ -187,10 +187,11 @@ function submitData() {
                 item.substring(1).toLowerCase()
         )
         .join(' ')
+    const submit = document.getElementById('submit')
     if (correctEmail && correctPassword && correctPasswordRepeat) {
         accountForm.style.display = 'none'
         welcome.style.display = 'block'
-        welcome.innerHTML = `Welcome, ${name}!`
+        welcome.textContent = `Welcome, ${name}!`
     } else {
         submit.setAttribute('disabled', 'true')
         submit.setAttribute('aria-disabled', 'true')
