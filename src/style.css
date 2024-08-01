@@ -51,12 +51,13 @@
     }
 
     .error {
-        font-size: 1.125rem;
+        font-size: 1rem;
         margin-top: 2rem;
         padding: 1rem;
     }
 
     .error-span {
+        font-size: 1rem;
         padding-right: 1rem;
     }
 
@@ -112,12 +113,13 @@
     }
 
     .error {
-        font-size: min(4vw, 1.125rem);
+        font-size: min(4vw, 1rem);
         margin-top: min(4vw, 2rem);
         padding: min(2vw, 1rem);
     }
 
     .error-span {
+        font-size: 1rem;
         padding-right: min(1vw, 1rem);
     }
 
@@ -177,12 +179,13 @@
     }
 
     .error {
-        font-size: 1.125rem;
+        font-size: 1rem;
         margin-top: min(4vw, 2rem);
         padding: min(2vw, 1rem);
     }
 
     .error-span {
+        font-size: 1rem;
         padding-right: min(1vw, 0.5rem);
     }
 
@@ -251,6 +254,7 @@
     }
 
     .error-span {
+        font-size: min(7vw, 0.875rem);
         padding-right: max(2vw, 0.25rem);
     }
 
@@ -355,13 +359,12 @@ input:disabled {
 
 .error {
     background-color: rgba(254, 254, 254, 0.75);
-    font-size: smaller;
     outline: #f80101 solid 2px;
+    margin-bottom: 2rem;
 }
 
 .error-span {
     color: #f80101;
-    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
