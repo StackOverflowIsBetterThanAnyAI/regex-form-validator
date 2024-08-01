@@ -19,6 +19,12 @@
         font-size: 1.5rem;
     }
 
+    h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
     html {
         padding-bottom: 2rem;
     }
@@ -31,10 +37,6 @@
     label {
         font-size: 1.125rem;
         margin-top: 1rem;
-    }
-
-    span {
-        padding-right: 1rem;
     }
 
     .create-account-form {
@@ -52,6 +54,10 @@
         font-size: 1.125rem;
         margin-top: 2rem;
         padding: 1rem;
+    }
+
+    .error-span {
+        padding-right: 1rem;
     }
 
     .input-label-container {
@@ -78,6 +84,12 @@
         font-size: 1.25rem;
     }
 
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
     input {
         font-size: 1rem;
         padding: 0.5rem;
@@ -86,10 +98,6 @@
     label {
         font-size: 1.125rem;
         margin-top: min(1vw, 1rem);
-    }
-
-    span {
-        padding-right: min(1vw, 1rem);
     }
 
     .create-account-form {
@@ -107,6 +115,10 @@
         font-size: min(4vw, 1.125rem);
         margin-top: min(4vw, 2rem);
         padding: min(2vw, 1rem);
+    }
+
+    .error-span {
+        padding-right: min(1vw, 1rem);
     }
 
     .input-label-container {
@@ -137,6 +149,12 @@
         font-size: 1.25rem;
     }
 
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        margin-top: 0.5rem;
+    }
+
     input {
         font-size: 1rem;
         padding: min(1vw, 0.5rem);
@@ -145,10 +163,6 @@
     label {
         font-size: 1.125rem;
         margin-top: max(1vw, 0.5rem);
-    }
-
-    span {
-        padding-right: min(1vw, 0.5rem);
     }
 
     .create-account-form {
@@ -166,6 +180,10 @@
         font-size: 1.125rem;
         margin-top: min(4vw, 2rem);
         padding: min(2vw, 1rem);
+    }
+
+    .error-span {
+        padding-right: min(1vw, 0.5rem);
     }
 
     .input-label-container {
@@ -196,6 +214,12 @@
         font-size: min(9vw, 1.125rem);
     }
 
+    h3 {
+        font-size: min(7vw, 0.875rem);
+        margin-bottom: 0.25rem;
+        margin-top: 0.25rem;
+    }
+
     input {
         font-size: min(7vw, 0.875rem);
         padding: min(2vw, 0.25rem);
@@ -207,10 +231,6 @@
     label {
         font-size: min(8vw, 1rem);
         margin-top: max(4vw, 0.5rem);
-    }
-
-    span {
-        padding-right: max(2vw, 0.25rem);
     }
 
     .create-account-form {
@@ -228,6 +248,10 @@
         font-size: min(8vw, 1rem);
         margin-top: min(8vw, 1rem);
         padding: min(4vw, 0.5rem);
+    }
+
+    .error-span {
+        padding-right: max(2vw, 0.25rem);
     }
 
     .input-label-container {
@@ -261,6 +285,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-weight: 500;
+    text-align: center;
+}
+
 input {
     border-radius: 8px;
     border: none;
@@ -286,12 +315,6 @@ input:focus-visible {
 input:disabled {
     cursor: not-allowed;
     outline: none;
-}
-
-span {
-    color: #f80101;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .create-account-form {
@@ -336,9 +359,19 @@ span {
     outline: #f80101 solid 2px;
 }
 
+.error-span {
+    color: #f80101;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .input-label-container {
     display: flex;
     flex-direction: column;
+}
+
+.required {
+    color: #f80101;
 }
 
 .welcome {

@@ -13,33 +13,47 @@
         <h1>Regex Form Validator</h1>
         <div class="create-account-form" id="create-account-form">
             <h2>Create Account</h2>
+            <h3>
+                All fields marked with <span class="required">*</span> are
+                required
+            </h3>
             <form class="input-label-container">
-                <label for="email">Email</label>
+                <label for="email">Email<span class="required"> *</span></label>
                 <input
                     id="email"
                     type="text"
                     placeholder="Enter Email."
                     autocomplete="email"
                     oninput="emailInput()"
+                    required
                     autofocus
+                    aria-required="true"
                 />
-                <label for="password">Password</label>
+                <label for="password"
+                    >Password<span class="required"> *</span></label
+                >
                 <input
                     id="password"
                     type="password"
                     placeholder="Enter Password."
                     autocomplete="new-password"
                     oninput="passwordInput()"
+                    required
+                    aria-required="true"
                 />
-                <label for="password-repeat">Password</label>
+                <label for="password-repeat"
+                    >Password<span class="required"> *</span></label
+                >
                 <input
                     id="password-repeat"
                     type="password"
                     placeholder="Repeat Password."
                     autocomplete="new-password"
                     oninput="passwordRepeatInput()"
+                    required
                     disabled
                     aria-disabled="true"
+                    aria-required="true"
                 />
             </form>
             <button
@@ -54,23 +68,33 @@
         </div>
         <div class="error" id="error-container" style="display: none">
             <div id="error-email" style="display: none">
-                <span>!</span>Please enter a valid Email address!
+                <span class="error-span">!</span>Please enter a valid Email
+                address!
             </div>
             <div id="error-password" style="display: none">
                 <div id="info">
-                    <span>!</span>The password must contain the following
-                    characters:
+                    <span class="error-span">!</span>The password must contain
+                    the following characters:
                 </div>
-                <div id="lowercase"><span>X</span>One lowercase letter.</div>
-                <div id="uppercase"><span>X</span>One uppercase letter.</div>
-                <div id="number"><span>X</span>One number.</div>
-                <div id="special"><span>X</span>One special character.</div>
+                <div id="lowercase">
+                    <span class="error-span">X</span>One lowercase letter.
+                </div>
+                <div id="uppercase">
+                    <span class="error-span">X</span>One uppercase letter.
+                </div>
+                <div id="number">
+                    <span class="error-span">X</span>One number.
+                </div>
+                <div id="special">
+                    <span class="error-span">X</span>One special character.
+                </div>
                 <div id="length">
-                    <span>X</span>At least eight characters in total.
+                    <span class="error-span">X</span>At least eight characters
+                    in total.
                 </div>
             </div>
             <div id="error-password-repeat" style="display: none">
-                <span>!</span>The passwords do not match!
+                <span class="error-span">!</span>The passwords do not match!
             </div>
         </div>
         <h2 class="welcome" id="welcome" style="display: none"></h2>
