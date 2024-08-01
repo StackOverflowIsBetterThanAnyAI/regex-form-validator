@@ -25,10 +25,6 @@
         margin-top: 0.5rem;
     }
 
-    html {
-        padding-bottom: 2rem;
-    }
-
     input {
         font-size: 1rem;
         padding: 0.5rem;
@@ -360,7 +356,6 @@ input:disabled {
 .error {
     background-color: rgba(254, 254, 254, 0.75);
     outline: #f80101 solid 2px;
-    margin-bottom: 2rem;
 }
 
 .error-span {

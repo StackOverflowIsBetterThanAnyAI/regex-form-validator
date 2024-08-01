@@ -49,6 +49,7 @@ function emailInput() {
 function passwordInput() {
     const password = document.getElementById('password')
     const passwordRepeat = document.getElementById('password-repeat')
+    const errorContainer = document.getElementById('error-container')
     const errorPassword = document.getElementById('error-password')
     const lowercase = document.getElementById('lowercase')
     const uppercase = document.getElementById('uppercase')
@@ -105,6 +106,7 @@ function passwordInput() {
         password.style.outlineColor = '#1aaa00'
         passwordRepeat.removeAttribute('disabled')
         passwordRepeat.removeAttribute('aria-disabled')
+        errorContainer.style.marginBottom = '0px'
         errorPassword.style.display = 'none'
         correctPassword = true
         password.addEventListener('keydown', (e) => {
@@ -117,6 +119,7 @@ function passwordInput() {
         password.style.outlineColor = '#f80101'
         passwordRepeat.setAttribute('disabled', 'true')
         passwordRepeat.setAttribute('aria-disabled', 'true')
+        errorContainer.style.marginBottom = '2rem'
         errorPassword.style.display = 'block'
         correctPassword = false
         if (!passwordRepeat.hasAttribute('disabled'))
